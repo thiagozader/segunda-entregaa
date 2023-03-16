@@ -1,0 +1,11 @@
+@mixin mixin-table($align, $justify, $border)   {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    border: $border;
+}
+@mixin mixin-carddd ($border, $padding, $text-align) {
+    border: $border;
+    padding: $padding;
+    text-align: $text-align; 
+}

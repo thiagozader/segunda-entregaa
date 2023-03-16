@@ -1,0 +1,29 @@
+.container-table{
+    table{
+        tbody{
+            tr{
+                td{
+                    font-family: sans-serif;
+                }
+            }
+        }
+    }
+}
+.container-table{
+    @include mixin-table(center,center,solid 3px)
+}
+table{
+    color: white;
+    font-size: 30px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+td{
+    padding: 15px ;
+    border-bottom: solid 2px;
+}
+tbody{
+    tr:hover{
+        color: gold;
+    }
+}

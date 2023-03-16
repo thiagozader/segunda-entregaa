@@ -1,0 +1,50 @@
+.grid-container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.carddd {
+    @include mixin-carddd(4px solid white, 10px, center)
+    // border: 4px solid white;
+    // padding: 10px;
+    // text-align: center;
+}
+
+.carddd img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 1%;
+}
+.carddd{
+    h2{
+        color: white;
+    }
+}
+.carddd{
+    p{
+        color: white;
+    }
+}
+
+// .carddd{
+//     width: calc(33% - 20px);
+//     margin-bottom: 20px;
+//     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+//     border-radius: 10px;
+//     overflow: hidden;
+// }
+// .carddd-content{
+//     padding: 20px;
+// }
+// .carddd-content{
+//     h3{
+//         margin-top: 0;
+//     }
+// }
+// .carddd-content{
+//     p{
+//         margin-bottom: 0;
+//     }
+// }

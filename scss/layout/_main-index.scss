@@ -1,0 +1,65 @@
+
+.body-home{
+    background-image: url(../assets/desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo{
+    font-family: 'Abril Fatface';    
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: -400px;
+    font-size: larger;
+    z-index: 1;
+}
+.logo-medio{
+    text-align: center;
+    position: relative;
+    bottom: -400px;
+    font-size: larger;
+    z-index: 1;
+}
+.boton{
+    background-color: $background-rojo;
+    width: 125px;
+    height: 40px;
+    position: relative;
+    bottom: -400px;
+    margin: 0 auto;
+    z-index: 1;
+}
+.uniteya{
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    bottom: -9px;
+}
+.uniteya{
+    a{
+        color: #fff;
+    }
+}
+.body-profes{
+    background-color: #242323;
+}
+
+footer{
+    background-color: #242323;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+footer{
+    p{
+        margin: 0;
+    }
+}

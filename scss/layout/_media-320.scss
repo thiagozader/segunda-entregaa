@@ -1,0 +1,33 @@
+// index
+@media (max-width: 320px){
+    .titulo{
+        h1{
+            font-size: 25px;
+        }
+    }
+}
+
+// titulos
+@media (max-width: 320px){ 
+.tituloo{
+    h1{
+        font-size: 32px;
+    }
+}
+}
+
+// contactanos
+@media (max-width: 320px) {
+    .form-container{
+    margin: 0 auto;
+    width: 95%;
+    height: 80%;
+    }
+}
+
+// sucursales
+@media (max-width:320px){
+    .container-table{
+        padding: 10px;
+    }
+}

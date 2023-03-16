@@ -1,0 +1,33 @@
+.main-planes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.card{
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-content{
+    padding: 20px;
+}
+.card-content{
+    h3{
+        margin-top: 0;
+    }
+}
+.card-content{
+    p{
+        margin-bottom: 0;
+    }
+}
+ul{
+    li{
+        a{
+            color: blue;
+        }
+    }
+}
