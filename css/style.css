@@ -347,3 +347,7 @@ li a:hover li a:active {
 @media (max-width: 320px) {
   .container-table {
     padding: 10px; } }
+
+@media (max-width: 768px) {
+  .carddd h2 {
+    color: gold; } }
