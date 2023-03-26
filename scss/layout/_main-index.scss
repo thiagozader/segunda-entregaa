@@ -4,30 +4,35 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .titulo{
-    font-family: 'Abril Fatface';    
+    font-family: 'Abril Fatface';
     color: #fff;
     text-align: center;
     position: relative;
     bottom: -400px;
     font-size: larger;
-    z-index: 1;
-}
+    z-index: 1; 
+    }
+
 .logo-medio{
     text-align: center;
     position: relative;
     bottom: -400px;
     font-size: larger;
-    z-index: 1;
-}
+    z-index: 1; 
+    }
+
 .boton{
-    background-color: $background-rojo;
+    background-color: #f33d3d;
     width: 125px;
     height: 40px;
     position: relative;
-    bottom: -400px;
+    bottom: 0;
     margin: 0 auto;
     z-index: 1;
 }

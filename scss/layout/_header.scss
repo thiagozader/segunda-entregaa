@@ -5,70 +5,68 @@
     background-attachment: fixed;
 }
 nav{
+    display: flex;
     height: 80px;
     width: 100%;
+    background: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
 }
-.enlace{
-    position: absolute;
-    padding: 20px 50px;
-    z-index: 9999;
+nav .logo{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
 }
-.logo{
-    height: 40px;
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
 }
-
-nav{
-    ul{
-        text-align: center;
-        z-index: 9999;
-    }
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 nav{
     ul{
         li{
-            display: inline-block;
-            line-height: 80px;
-            margin: 0 5px;
-            z-index: 9999;
+            a:active
         }
     }
 }
 nav{
     ul{
         li{
-            a{
-                color: $color-blanco;
-                font-size: 18px;
-                padding: 7px;
-                border-radius: 3px;
-                text-transform: uppercase;
-                font-family: 'Roboto', sans-serif;
-                text-decoration: none;
-                z-index: 9999;
+            a:hover{
+                    color: #111;
+                    background: #fff;
+                    z-index: 9999;
             }
         }
     }
 }
-li{
-    a:active{    
-        li:hover{
-        z-index: 9999;
-        background: gold;
-        transition: .5s;
+nav{
+    .menu-btn{
+        i{
+                color: #fff;
+                font-size: 22px;
+                cursor: pointer;
+                display: none;
+                z-index: 9999;
         }
     }
 }
-.checkbtn{
-    z-index: 9999;
-    font-size: 30px;
-    color: $color-blanco;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    z-index: 9999;
+
+input[type="checkbox"]{
     display: none;
 }

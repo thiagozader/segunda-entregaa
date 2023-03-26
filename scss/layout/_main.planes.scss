@@ -6,28 +6,33 @@
 }
 .card{
     width: calc(33% - 20px);
-    margin-bottom: 20px;
+    margin-bottom: 15%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
+    z-index: -1;
 }
 .card-content{
-    padding: 20px;
+    padding: 15%;
+    z-index: -1;
 }
 .card-content{
     h3{
         margin-top: 0;
+        z-index: -1;
     }
 }
 .card-content{
     p{
         margin-bottom: 0;
+        z-index: -1;
     }
 }
 ul{
     li{
         a{
             color: blue;
+            z-index: -1;
         }
     }
 }

@@ -6,7 +6,8 @@
 }
 
 .carddd {
-    @include mixin-carddd(4px solid white, 10px, center)  
+    @include mixin-carddd
+    (4px solid white, 10px, center)  
 }
 
 .carddd img {

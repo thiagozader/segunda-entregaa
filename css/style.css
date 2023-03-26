@@ -16,61 +16,64 @@
   background-attachment: fixed; }
 
 nav {
+  display: flex;
   height: 80px;
-  width: 100%; }
+  width: 100%;
+  background: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap; }
 
-.enlace {
-  position: absolute;
-  padding: 20px 50px;
-  z-index: 9999; }
-
-.logo {
-  height: 40px; }
+nav .logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600; }
 
 nav ul {
-  text-align: center;
-  z-index: 9999; }
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none; }
 
 nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-  z-index: 9999; }
+  margin: 0 5px; }
 
 nav ul li a {
-  color: #fff;
-  font-size: 18px;
-  padding: 7px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
+  color: #f2f2f2;
   text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease; }
+
+nav ul li {
+  a: active; }
+
+nav ul li a:hover {
+  color: #111;
+  background: #fff;
   z-index: 9999; }
 
-li a:active li:hover {
-  z-index: 9999;
-  background: gold;
-  transition: .5s; }
-
-.checkbtn {
-  z-index: 9999;
-  font-size: 30px;
+nav .menu-btn i {
   color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
+  font-size: 22px;
   cursor: pointer;
-  display: none; }
+  display: none;
+  z-index: 9999; }
 
-#check {
-  z-index: 9999;
+input[type="checkbox"] {
   display: none; }
 
 .body-home {
   background-image: url(../assets/desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
 .titulo {
   font-family: 'Abril Fatface';
@@ -93,7 +96,7 @@ li a:active li:hover {
   width: 125px;
   height: 40px;
   position: relative;
-  bottom: -400px;
+  bottom: 0;
   margin: 0 auto;
   z-index: 1; }
 
@@ -145,6 +148,11 @@ footer p {
 
 .carddd p {
   color: white; }
+
+.body-profes {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
 .container-table table tbody tr td {
   font-family: sans-serif; }
@@ -229,54 +237,41 @@ hr {
 
 .card {
   width: calc(33% - 20px);
-  margin-bottom: 20px;
+  margin-bottom: 15%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: -1; }
 
 .card-content {
-  padding: 20px; }
+  padding: 15%;
+  z-index: -1; }
 
 .card-content h3 {
-  margin-top: 0; }
+  margin-top: 0;
+  z-index: -1; }
 
 .card-content p {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  z-index: -1; }
 
 ul li a {
-  color: blue; }
+  color: blue;
+  z-index: -1; }
 
-@media (max-width: 425px) {
-  .enlace {
-    padding-left: 20px; }
-  nav ul li a {
-    font-size: 16px; } }
+.mi-footer {
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto; }
 
-@media (max-width: 425px) {
-  .checkbtn {
-    display: block; }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #242323;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s; }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px; }
-  nav ul li a {
-    font-size: 20px; } }
+.mi-footer .mi-container {
+  max-width: 100%;
+  margin: 0 auto; }
 
-li a:hover li a:active {
-  background: none;
-  color: gold; }
-
-#check:checked ul {
-  left: 0; }
+.mi-footer p {
+  color: #242323;
+  margin: 0; }
 
 @media screen and (max-width: 425px) {
   .titulo {
@@ -287,18 +282,10 @@ li a:hover li a:active {
     bottom: -300px; }
   .boton {
     width: 100%;
-    bottom: -300px; }
+    bottom: 0; }
   .uniteya {
     width: 100%;
     text-align: center; } }
-
-@media (max-width: 425px) {
-  .card {
-    top: -35px;
-    width: 90%;
-    margin: 20px auto; }
-  .tituloo h1 {
-    font-size: 45px; } }
 
 @media screen and (max-width: 425px) {
   .tituloo {
@@ -348,6 +335,81 @@ li a:hover li a:active {
   .container-table {
     padding: 10px; } }
 
+@media (max-width: 1000px) {
+  nav {
+    padding: 0 40px 0 50px;
+    z-index: 9999; } }
+
+@media (max-width: 920px) {
+  nav
+.menu-btn i {
+    display: block;
+    z-index: 9999; }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d"; }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    z-index: 9999; }
+  #click:checked ~ ul {
+    left: 0;
+    z-index: 9999; }
+  nav ul li {
+    width: 100%;
+    margin: 40px 0;
+    z-index: 9999; }
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 9999; }
+  #click:checked ~ ul li a {
+    margin-left: 0px;
+    z-index: 9999; }
+  #click:checked ~ ul nav ul li a.active,
+  #click:checked ~ ul nav ul li a:hover {
+    background: none;
+    color: gold;
+    z-index: 9999; } }
+
+@media (max-width: 768px) {
+  nav .menuu {
+    width: 100%;
+    height: 0;
+    overflow: hidden; }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0; }
+  nav label {
+    display: inline-flex;
+    color: gold;
+    cursor: pointer; }
+  nav #toggle:checked ~ .menuu {
+    height: 100%; } }
+
 @media (max-width: 768px) {
   .carddd h2 {
     color: gold; } }
+
+@media (max-width: 768px) {
+  .card {
+    top: -35px;
+    width: 90%;
+    margin: 20px auto; }
+  .tituloo h1 {
+    font-size: 45px; } }
+
+@media (max-width: 1000px) {
+  nav {
+    padding: 0 40px 0 50px;
+    z-index: 9999; } }

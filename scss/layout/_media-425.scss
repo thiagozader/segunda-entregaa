@@ -1,69 +1,3 @@
-// header
-@media (max-width: 425px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav{
-        ul{
-            li{
-                a{
-                    font-size: 16px;
-                }
-            }
-        }
-    }
-}
-@media (max-width: 425px) {
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #242323;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav{
-        ul{
-        li{
-                display: block;
-                margin: 50px 0;
-                line-height: 30px;
-            }
-        }
-    }
-    nav{
-        ul{
-            li{
-                a{
-                    font-size: 20px;
-                }
-            }
-        }
-    }
-}
-li{
-        a:hover{
-            li{
-                a:active{
-            background: none;
-            color:gold;
-                
-                }
-            }
-        }
-    }
-#check:checked{
-    ul{
-        left: 0;
-    }
-}
-
-// index 
 @media screen and (max-width: 425px) {
     .titulo{
     font-size: medium;
@@ -77,25 +11,12 @@ li{
 
     .boton{
     width: 100%;
-    bottom: -300px;
+    bottom: 0;
     }
 
     .uniteya{
     width: 100%;
     text-align: center;
-    }
-}
-
-// planes
-@media (max-width: 425px) {
-    .card{
-    top: -35px;
-    width: 90%;
-    margin: 20px auto;}
-    .tituloo{
-        h1{
-            font-size: 45px;
-        }
     }
 }
 
